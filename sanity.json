@@ -1,0 +1,54 @@
+{
+  "root": true,
+  "project": {
+    "name": "Field"
+  },
+  "api": {
+    "projectId": "pybs2ng6",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/dashboard",
+    "media",
+    "@sanity/production-preview",
+    "vercel-deploy"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./sanity-structure.js"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "./logo/myLogo.js"
+    },
+    {
+      "implements": "part:@sanity/base/theme/variables/override-style",
+      "path": "./styles/variables.css"
+    },
+    {
+      "implements": "part:@sanity/form-builder/input/image/asset-sources",
+      "path": "./parts/assetSources.js"
+    },    
+    {
+      "implements": "part:@sanity/production-preview/resolve-production-url",
+      "path": "./utils/resolveProductionUrl.js"
+    }
+  ]
+}
