@@ -13,6 +13,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
+    {
       title: "Job Title",
       name: "jobTitle",
       description: "The title of this team member's position. eg: 'Head of Strategy & Operations'",

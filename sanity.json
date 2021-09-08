@@ -16,7 +16,8 @@
     "@sanity/dashboard",
     "media",
     "@sanity/production-preview",
-    "vercel-deploy"
+    "vercel-deploy",
+    "order-documents"
   ],
   "env": {
     "development": {
@@ -45,7 +46,7 @@
     {
       "implements": "part:@sanity/form-builder/input/image/asset-sources",
       "path": "./parts/assetSources.js"
-    },    
+    },
     {
       "implements": "part:@sanity/production-preview/resolve-production-url",
       "path": "./utils/resolveProductionUrl.js"
