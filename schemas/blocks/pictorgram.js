@@ -21,7 +21,7 @@ export default {
       name: "text",
       description: 'A short text block about this pictogram item"',
       type: 'text',
-      validation: Rule => Rule.required()
+      validation: Rule => Rule.required().min(10).max(180)
     }
   ]
 }

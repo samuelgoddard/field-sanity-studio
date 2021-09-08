@@ -29,7 +29,7 @@ export default {
       name: 'chapter1Text',
       description: 'The text of the first chapter, eg: "We believe systemic changes can be made, and we’re determined to make them happen fast."',
       type: 'string',
-      validation: Rule => Rule.required()
+      validation: Rule => Rule.required().min(10).max(90)
     },
     {
       title: 'Chapter 2 Title',

@@ -22,7 +22,7 @@ export default {
       name: 'chapter1Text',
       description: 'The text of the first chapter, eg: "We need a seismic shift in our energy systems - and we need it now."',
       type: 'string',
-      validation: Rule => Rule.required()
+      validation: Rule => Rule.required().min(10).max(90)
     },
     {
       title: 'Chapter 2 Title',
@@ -51,7 +51,7 @@ export default {
       name: 'chapter3Text',
       description: 'The text of the third chapter, eg: "We’ll begin with energy storage, then push into other infrastructure."',
       type: 'string',
-      validation: Rule => Rule.required()
+      validation: Rule => Rule.required().min(10).max(300)
     },
     {
       title: 'Chapter 3 Bars',

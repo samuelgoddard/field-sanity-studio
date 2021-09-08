@@ -13,7 +13,7 @@ export default {
     {
       title: 'Intro Text',
       name: 'introText',
-      description: 'The introductory text in the right column of the hero',
+      description: 'The introductory text in the right column of the hero (300 character limit)',
       type: 'array', 
       of: [{type: 'block'}],
       validation: Rule => Rule.required()
@@ -30,7 +30,7 @@ export default {
       name: 'chapter1Text',
       description: 'The text of the first chapter, eg: "Field. Smart, investable solutions towards net zero."',
       type: 'string',
-      validation: Rule => Rule.required()
+      validation: Rule => Rule.required().min(10).max(90)
     },
     {
       title: 'Pictogram Blocks',
