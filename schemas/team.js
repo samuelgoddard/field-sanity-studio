@@ -26,6 +26,18 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Department',
+      name: 'department',
+      type: 'reference',
+      to: [{type: 'department'}]
+    },
+    {
+      title: 'Location',
+      name: 'location',
+      type: 'reference',
+      to: [{type: 'location'}]
+    },
+    {
       title: "Avatar",
       name: "avatar",
       description: "The image of this team member",
