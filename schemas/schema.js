@@ -9,6 +9,8 @@ import singletonTeam from './singletonTeam'
 
 import team from './team'
 import careers from './careers'
+import departments from './departments'
+import locations from './locations'
 
 import seo from './common/seo'
 
@@ -25,6 +27,8 @@ export default createSchema({
     singletonPrivacyPolicy,
     team,
     careers,
+    departments,
+    locations,
     seo,
     bar,
     pictorgram
