@@ -11,6 +11,10 @@ import team from './team'
 import careers from './careers'
 import departments from './departments'
 import locations from './locations'
+import status from './status'
+import storage from './storage'
+import country from './country'
+import projects from './projects'
 
 import seo from './common/seo'
 
@@ -29,6 +33,10 @@ export default createSchema({
     careers,
     departments,
     locations,
+    storage,
+    country,
+    status,
+    projects,
     seo,
     bar,
     pictorgram

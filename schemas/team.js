@@ -26,6 +26,18 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Department',
+      name: 'department',
+      type: 'reference',
+      to: [{type: 'departments'}]
+    },
+    {
+      title: 'Location',
+      name: 'location',
+      type: 'reference',
+      to: [{type: 'locations'}]
+    },
+    {
       title: "Avatar",
       name: "avatar",
       description: "The image of this team member",
@@ -57,5 +69,12 @@ export default {
     //   name: 'seo',
     //   type: 'seo'
     // }
-  ]
+  ],
+  preview: {
+    select: {
+      title: 'name',
+      subtitle: 'jobTitle',
+      media: 'avatar'
+    }
+  }
 }
