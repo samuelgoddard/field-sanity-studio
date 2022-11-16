@@ -37,6 +37,12 @@ export default {
       type: 'reference',
       to: [{type: 'storage'}]
     },
+    {
+      title: 'Google Maps URL',
+      name: 'googleMapsUrl',
+      description: '(Optional) The Google Maps URL for this project',
+      type: 'url'
+    },
   ],
   preview: {
     select: {

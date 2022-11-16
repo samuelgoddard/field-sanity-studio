@@ -10,7 +10,9 @@ import {
   FiSmile,
   FiBriefcase,
   FiMapPin,
-  FiShare2
+  FiShare2,
+  FiFileText,
+  FiFilter
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -83,9 +85,9 @@ export default () =>
           S.list()
             .title('Views')
             .items([
-              S.listItem().title('Articles').child(S.documentTypeList('views').title('Articles')).icon(FiUsers),
+              S.listItem().title('Articles').child(S.documentTypeList('views').title('Articles')).icon(FiFileText),
               S.divider(),
-              S.listItem().title('Categories').child(S.documentTypeList('categories').title('Categories')).icon(FiUsers),
+              S.listItem().title('Categories').child(S.documentTypeList('categories').title('Categories')).icon(FiFilter),
               ,
             ])),
       S.divider(),
