@@ -10,13 +10,19 @@ import singletonTeam from './singletonTeam'
 import team from './team'
 import careers from './careers'
 import departments from './departments'
+import categories from './categories'
 import locations from './locations'
 import status from './status'
 import storage from './storage'
 import country from './country'
 import projects from './projects'
+import views from './views'
 
 import seo from './common/seo'
+import defaultImage from './common/defaultImage'
+import modularImageBlock from './common/modularImageBlock'
+import modularQuoteBlock from './common/modularQuoteBlock'
+import modularTextBlock from './common/modularTextBlock'
 
 import pictorgram from './blocks/pictorgram'
 import bar from './blocks/bar'
@@ -35,9 +41,15 @@ export default createSchema({
     locations,
     storage,
     country,
+    categories,
     status,
     projects,
+    views,
     seo,
+    defaultImage,
+    modularImageBlock,
+    modularQuoteBlock,
+    modularTextBlock,
     bar,
     pictorgram
   ]),

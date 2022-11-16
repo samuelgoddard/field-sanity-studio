@@ -13,6 +13,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: "MWh",
+      name: "mwh",
+      description: "The amount of MWh (eg: '200')",
+      type: "string",
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Country',
       name: 'country',
       type: 'reference',

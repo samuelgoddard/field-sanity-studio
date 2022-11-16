@@ -58,25 +58,36 @@ export default () =>
               S.listItem().title('Team Departments').child(S.documentTypeList('departments').title('Team Departments')).icon(FiShare2),
               ,
             ])),
-            S.divider(),
-            S.listItem()
-              .title('Projects')
-              .child(
-                S.list()
-                  .title('Projects')
-                  .items([
-                    S.divider(),
-                    S.listItem().title('Projects').child(S.documentTypeList('projects').title('Projects')).icon(FiUsers),
-                    S.divider(),
-                    S.listItem().title('Project Countries').child(S.documentTypeList('country').title('Project Countries')).icon(FiMapPin),
-                    S.divider(),
-                    S.listItem().title('Project Statuses').child(S.documentTypeList('status').title('Project Statuses')).icon(FiShare2),
-                    S.divider(),
-                    S.listItem().title('Project Storages').child(S.documentTypeList('storage').title('Project Storages')).icon(FiShare2),
-                    ,
-                  ])),
+      S.divider(),
+      S.listItem()
+        .title('Projects')
+        .child(
+          S.list()
+            .title('Projects')
+            .items([
+              S.listItem().title('Projects').child(S.documentTypeList('projects').title('Projects')).icon(FiUsers),
+              S.divider(),
+              S.listItem().title('Project Countries').child(S.documentTypeList('country').title('Project Countries')).icon(FiMapPin),
+              S.divider(),
+              S.listItem().title('Project Statuses').child(S.documentTypeList('status').title('Project Statuses')).icon(FiShare2),
+              S.divider(),
+              S.listItem().title('Project Storages').child(S.documentTypeList('storage').title('Project Storages')).icon(FiShare2),
+              ,
+            ])),
       S.divider(),
       S.listItem().title('Careers').child(S.documentTypeList('careers').title('Careers')).icon(FiSmile),
+      S.divider(),
+      S.listItem()
+        .title('Views')
+        .child(
+          S.list()
+            .title('Views')
+            .items([
+              S.listItem().title('Articles').child(S.documentTypeList('views').title('Articles')).icon(FiUsers),
+              S.divider(),
+              S.listItem().title('Categories').child(S.documentTypeList('categories').title('Categories')).icon(FiUsers),
+              ,
+            ])),
       S.divider(),
       S.listItem().title('Contact').child(S.editor().id('contact').schemaType('contact').documentId('singleton-contact')).icon(FiMail),
       S.divider(),
