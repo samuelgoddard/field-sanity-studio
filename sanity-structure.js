@@ -41,9 +41,13 @@ export default () =>
   S.list()
     .title("Content")
     .items([
-      S.listItem().title('Home').child(S.editor().id('home').schemaType('home').documentId('singleton-home').views(getPreview('home'))).icon(FiHome),
+      S.listItem().title('Home [LEGACY]').child(S.editor().id('home').schemaType('home').documentId('singleton-home').views(getPreview('home'))).icon(FiHome),
       S.divider(),
-      S.listItem().title('Mission').child(S.editor().id('mission').schemaType('mission').documentId('singleton-mission').views(getPreview('mission'))).icon(FiBatteryCharging),
+      S.listItem().title('Home').child(S.editor().id('homeNew').schemaType('homeNew').documentId('singleton-homeNew').views(getPreview('homeNew'))).icon(FiHome),
+      S.divider(),
+      S.listItem().title('Mission [LEGACY]').child(S.editor().id('mission').schemaType('mission').documentId('singleton-mission').views(getPreview('mission'))).icon(FiBatteryCharging),
+      S.divider(),
+      S.listItem().title('Mission').child(S.editor().id('missionNew').schemaType('missionNew').documentId('singleton-missionNew').views(getPreview('missionNew'))).icon(FiBatteryCharging),
       S.divider(),
       S.listItem()
         .title('Team')
@@ -51,7 +55,9 @@ export default () =>
           S.list()
             .title('Team')
             .items([
-              S.listItem().title('Team (Landing Page)').child(S.editor().id('teamLanding').schemaType('teamLanding').documentId('singleton-teamLanding').views(getPreview('teamLanding'))).icon(FiSun),
+              S.listItem().title('Team (Landing Page)[LEGACY]').child(S.editor().id('teamLanding').schemaType('teamLanding').documentId('singleton-teamLanding').views(getPreview('teamLanding'))).icon(FiSun),
+              S.divider(),
+              S.listItem().title('Team (Landing Page)').child(S.editor().id('teamLandingNew').schemaType('teamLandingNew').documentId('singleton-teamLandingNew').views(getPreview('teamLandingNew'))).icon(FiSun),
               S.divider(),
               S.listItem().title('Team (Members)').child(S.documentTypeList('team').title('Team (Members)')).icon(FiUsers),
               S.divider(),
@@ -67,6 +73,8 @@ export default () =>
           S.list()
             .title('Projects')
             .items([
+              S.listItem().title('Projects (Landing Page)').child(S.editor().id('projectsLanding').schemaType('projectsLanding').documentId('singleton-projectsLanding').views(getPreview('projectsLanding'))).icon(FiSun),
+              S.divider(),
               S.listItem().title('Projects').child(S.documentTypeList('projects').title('Projects')).icon(FiUsers),
               S.divider(),
               S.listItem().title('Project Countries').child(S.documentTypeList('country').title('Project Countries')).icon(FiMapPin),

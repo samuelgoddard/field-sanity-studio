@@ -2,11 +2,15 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 import singletonHome from './singletonHome'
+import singletonHomeNew from './singletonHomeNew'
 import singletonContact from './singletonContact'
 import singletonMission from './singletonMission'
+import singletonMissionNew from './singletonMissionNew'
 import singletonPrivacyPolicy from './singletonPrivacyPolicy'
 import singletonTeam from './singletonTeam'
+import singletonTeamNew from './singletonTeamNew'
 import singletonCareers from './singletonCareers'
+import singletonProjects from './singletonProjects'
 
 import team from './team'
 import careers from './careers'
@@ -32,11 +36,15 @@ export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
     singletonHome,
+    singletonHomeNew,
     singletonContact,
     singletonMission,
+    singletonMissionNew,
     singletonTeam,
+    singletonTeamNew,
     singletonPrivacyPolicy,
     singletonCareers,
+    singletonProjects,
     team,
     careers,
     departments,
