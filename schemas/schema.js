@@ -6,6 +6,7 @@ import singletonContact from './singletonContact'
 import singletonMission from './singletonMission'
 import singletonPrivacyPolicy from './singletonPrivacyPolicy'
 import singletonTeam from './singletonTeam'
+import singletonCareers from './singletonCareers'
 
 import team from './team'
 import careers from './careers'
@@ -35,6 +36,7 @@ export default createSchema({
     singletonMission,
     singletonTeam,
     singletonPrivacyPolicy,
+    singletonCareers,
     team,
     careers,
     departments,

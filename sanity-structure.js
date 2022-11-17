@@ -77,7 +77,18 @@ export default () =>
               ,
             ])),
       S.divider(),
-      S.listItem().title('Careers').child(S.documentTypeList('careers').title('Careers')).icon(FiSmile),
+      // S.listItem().title('Careers').child(S.documentTypeList('careers').title('Careers')).icon(FiSmile),
+      S.listItem()
+        .title('Careers')
+        .child(
+          S.list()
+            .title('Careers')
+            .items([
+              S.listItem().title('Careers (Landing Page)').child(S.editor().id('careersLanding').schemaType('careersLanding').documentId('singleton-careersLanding').views(getPreview('teamLanding'))).icon(FiSun),
+              ,
+              S.divider(),
+              S.listItem().title('Careers Listings (LEGACY)').child(S.documentTypeList('careers').title('Careers Listings (LEGACY)')).icon(FiFileText),
+            ])),
       S.divider(),
       S.listItem()
         .title('Views')
