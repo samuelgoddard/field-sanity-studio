@@ -49,8 +49,7 @@ export default {
       name: 'bio',
       description: 'The short biography of this team member',
       type: 'array', 
-      of: [{type: 'block'}],
-      validation: Rule => Rule.required()
+      of: [{type: 'block'}]
     },
     // {
     //   name: 'slug',
