@@ -18,7 +18,8 @@
     "@sanity/production-preview",
     "vercel-deploy",
     "order-documents",
-    "@sanity/color-input"
+    "@sanity/color-input",
+    "@sanity/orderable-document-list"
   ],
   "env": {
     "development": {

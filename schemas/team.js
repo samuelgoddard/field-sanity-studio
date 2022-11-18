@@ -1,10 +1,15 @@
 // import slugify from '../utils/slugify'
+import {
+  orderRankField,
+  orderRankOrdering,
+} from '@sanity/orderable-document-list';
 
 export default {
   title: "Team",
   name: 'team',
   type: "document",
   fields: [
+    orderRankField({ type: 'category', hidden: true }),
     {
       title: "Name",
       name: "name",

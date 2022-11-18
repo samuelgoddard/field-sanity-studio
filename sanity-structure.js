@@ -1,5 +1,6 @@
 import S from "@sanity/desk-tool/structure-builder";
 import IframePreview from './preview/IFramePreview'
+import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 
 import {
   FiHome,
@@ -57,7 +58,11 @@ export default () =>
             .items([
               S.listItem().title('Projects (Landing Page)').child(S.editor().id('projectsLanding').schemaType('projectsLanding').documentId('singleton-projectsLanding').views(getPreview('projectsLanding'))).icon(FiSun),
               S.divider(),
-              S.listItem().title('Projects').child(S.documentTypeList('projects').title('Projects')).icon(FiUsers),
+              orderableDocumentListDeskItem({
+                type: 'projects',
+                title: 'Projects',
+                icon: FiUsers
+              }),
               S.divider(),
               S.listItem().title('Project Countries').child(S.documentTypeList('country').title('Project Countries')).icon(FiMapPin),
               S.divider(),
@@ -79,7 +84,11 @@ export default () =>
               S.divider(),
               S.listItem().title('Team (Landing Page)').child(S.editor().id('teamLandingNew').schemaType('teamLandingNew').documentId('singleton-teamLandingNew').views(getPreview('teamLandingNew'))).icon(FiSun),
               S.divider(),
-              S.listItem().title('Team (Members)').child(S.documentTypeList('team').title('Team (Members)')).icon(FiUsers),
+              orderableDocumentListDeskItem({
+                type: 'team',
+                title: 'Team (Members)',
+                icon: FiUsers
+              }),
               S.divider(),
               S.listItem().title('Team Locations').child(S.documentTypeList('locations').title('Team Locations')).icon(FiMapPin),
               S.divider(),
