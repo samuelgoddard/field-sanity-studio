@@ -12,6 +12,7 @@ import singletonTeamNew from './singletonTeamNew'
 import singletonCareers from './singletonCareers'
 import singletonProjects from './singletonProjects'
 import singletonDevelopment from './singletonDevelopment'
+import singletonViews from './singletonViews'
 
 import team from './team'
 import careers from './careers'
@@ -43,6 +44,7 @@ export default createSchema({
     singletonMissionNew,
     singletonTeam,
     singletonTeamNew,
+    singletonViews,
     singletonDevelopment,
     singletonPrivacyPolicy,
     singletonCareers,

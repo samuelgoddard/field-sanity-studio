@@ -2,7 +2,7 @@ export default {
   title: 'Development',
   name: 'development',
   type: 'document',
-  __experimental_actions: ['update', 'create', 'delete', 'publish'],
+  __experimental_actions: ['update', /*'create', 'delete', */ 'publish'],
   fields: [
     {
       title: 'Title',

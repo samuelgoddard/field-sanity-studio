@@ -93,7 +93,7 @@ export default () =>
           S.list()
             .title('Careers')
             .items([
-              S.listItem().title('Careers (Landing Page)').child(S.editor().id('careersLanding').schemaType('careersLanding').documentId('singleton-careersLanding').views(getPreview('teamLanding'))).icon(FiSun),
+              S.listItem().title('Careers (Landing Page)').child(S.editor().id('careersLanding').schemaType('careersLanding').documentId('singleton-careersLanding').views(getPreview('careersLanding'))).icon(FiSun),
               ,
               S.divider(),
               S.listItem().title('Careers Listings (LEGACY)').child(S.documentTypeList('careers').title('Careers Listings (LEGACY)')).icon(FiFileText),
@@ -105,6 +105,9 @@ export default () =>
           S.list()
             .title('Views')
             .items([
+              S.listItem().title('Views (Landing Page)').child(S.editor().id('viewsLanding').schemaType('viewsLanding').documentId('singleton-viewsLanding').views(getPreview('viewsLanding'))).icon(FiSun),
+              ,
+              S.divider(),
               S.listItem().title('Articles').child(S.documentTypeList('views').title('Articles')).icon(FiFileText),
               S.divider(),
               S.listItem().title('Categories').child(S.documentTypeList('categories').title('Categories')).icon(FiFilter),

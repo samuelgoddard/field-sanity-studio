@@ -13,19 +13,6 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: "Featured",
-      name: "featured",
-      description: "Whether this article is 'Featured' which will pin it to the top of the index",
-      type: "boolean",
-      defaultValue: false
-    },
-    {
-      title: "Hero Image",
-      description: "The (optional) hero image for this article",
-      name: "heroImage",
-      type: "defaultImage"
-    },
-    {
       title: "Publish Date",
       description: "Press the button to the right to pick a date.",
       name: "publishDate",
