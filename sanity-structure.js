@@ -50,24 +50,6 @@ export default () =>
       S.listItem().title('Mission').child(S.editor().id('missionNew').schemaType('missionNew').documentId('singleton-missionNew').views(getPreview('missionNew'))).icon(FiBatteryCharging),
       S.divider(),
       S.listItem()
-        .title('Team')
-        .child(
-          S.list()
-            .title('Team')
-            .items([
-              S.listItem().title('Team (Landing Page)[LEGACY]').child(S.editor().id('teamLanding').schemaType('teamLanding').documentId('singleton-teamLanding').views(getPreview('teamLanding'))).icon(FiSun),
-              S.divider(),
-              S.listItem().title('Team (Landing Page)').child(S.editor().id('teamLandingNew').schemaType('teamLandingNew').documentId('singleton-teamLandingNew').views(getPreview('teamLandingNew'))).icon(FiSun),
-              S.divider(),
-              S.listItem().title('Team (Members)').child(S.documentTypeList('team').title('Team (Members)')).icon(FiUsers),
-              S.divider(),
-              S.listItem().title('Team Locations').child(S.documentTypeList('locations').title('Team Locations')).icon(FiMapPin),
-              S.divider(),
-              S.listItem().title('Team Departments').child(S.documentTypeList('departments').title('Team Departments')).icon(FiShare2),
-              ,
-            ])),
-      S.divider(),
-      S.listItem()
         .title('Projects')
         .child(
           S.list()
@@ -85,7 +67,26 @@ export default () =>
               ,
             ])),
       S.divider(),
-      // S.listItem().title('Careers').child(S.documentTypeList('careers').title('Careers')).icon(FiSmile),
+      S.listItem().title('Development').child(S.editor().id('development').schemaType('development').documentId('singleton-development').views(getPreview('development'))).icon(FiBatteryCharging),
+      S.divider(),
+      S.listItem()
+        .title('Team')
+        .child(
+          S.list()
+            .title('Team')
+            .items([
+              S.listItem().title('Team (Landing Page)[LEGACY]').child(S.editor().id('teamLanding').schemaType('teamLanding').documentId('singleton-teamLanding').views(getPreview('teamLanding'))).icon(FiSun),
+              S.divider(),
+              S.listItem().title('Team (Landing Page)').child(S.editor().id('teamLandingNew').schemaType('teamLandingNew').documentId('singleton-teamLandingNew').views(getPreview('teamLandingNew'))).icon(FiSun),
+              S.divider(),
+              S.listItem().title('Team (Members)').child(S.documentTypeList('team').title('Team (Members)')).icon(FiUsers),
+              S.divider(),
+              S.listItem().title('Team Locations').child(S.documentTypeList('locations').title('Team Locations')).icon(FiMapPin),
+              S.divider(),
+              S.listItem().title('Team Departments').child(S.documentTypeList('departments').title('Team Departments')).icon(FiShare2),
+              ,
+            ])),
+      S.divider(),
       S.listItem()
         .title('Careers')
         .child(

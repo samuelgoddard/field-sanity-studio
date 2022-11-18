@@ -118,8 +118,7 @@ export default {
       title: 'Careers CTA Text',
       name: 'careersCtaText',
       description: 'The text for the CTA at the end of this page',
-      type: 'text', 
-      rows: 5,
+      type: 'array', of: [{type: 'block'}],
       validation: Rule => Rule.required()
     },
     {
