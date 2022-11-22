@@ -64,7 +64,7 @@ export default {
       description: 'The bars in roadmap area',
       type: 'array',
       of: [{type: 'bar', title: 'Bar'}],
-      validation: Rule => Rule.required().min(4).max(4)
+      validation: Rule => Rule.required().min(5).max(5)
     },
     {
       title: 'Impact Number',

@@ -48,6 +48,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Values Intro Text',
+      name: 'valuesIntroText',
+      type: 'text', 
+      rows: 4,
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Values',
       name: 'values',
       type: 'array',
@@ -75,6 +82,13 @@ export default {
           }
         }
       ],
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Company Benefits Text',
+      name: 'companyBenefitsIntroText',
+      type: 'text', 
+      rows: 4,
       validation: Rule => Rule.required()
     },
     {
