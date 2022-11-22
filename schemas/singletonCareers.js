@@ -87,6 +87,7 @@ export default {
           name: 'item',
           type: 'object',
           fields: [
+            {name: 'icon', type: 'defaultImage', title: 'Icon', validation: Rule => Rule.required()},
             {name: 'heading', type: 'string', title: 'Heading', validation: Rule => Rule.required()},
             {name: 'text', type: 'text', rows: 3, title: 'Text', validation: Rule => Rule.required()},
           ],

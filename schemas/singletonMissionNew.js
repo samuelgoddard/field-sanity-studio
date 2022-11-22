@@ -46,7 +46,8 @@ export default {
     {
       title: 'Our Plan Text',
       name: 'ourPlanText',
-      type: 'text',
+      type: 'array', 
+      of: [{type: 'block'}],
       rows: 3,
       validation: Rule => Rule.required()
     },
