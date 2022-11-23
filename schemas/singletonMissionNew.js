@@ -26,8 +26,8 @@ export default {
     {
       title: 'The Challenge Text',
       name: 'theChallengeText',
-      type: 'text',
-      rows: 3,
+      type: 'array', 
+      of: [{type: 'block'}],
       validation: Rule => Rule.required()
     },
     {
