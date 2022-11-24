@@ -42,12 +42,12 @@ export default () =>
   S.list()
     .title("Content")
     .items([
-      S.listItem().title('Home [LEGACY]').child(S.editor().id('home').schemaType('home').documentId('singleton-home').views(getPreview('home'))).icon(FiHome),
-      S.divider(),
+      // S.listItem().title('Home [LEGACY]').child(S.editor().id('home').schemaType('home').documentId('singleton-home').views(getPreview('home'))).icon(FiHome),
+      // S.divider(),
       S.listItem().title('Home').child(S.editor().id('homeNew').schemaType('homeNew').documentId('singleton-homeNew').views(getPreview('homeNew'))).icon(FiHome),
       S.divider(),
-      S.listItem().title('Mission [LEGACY]').child(S.editor().id('mission').schemaType('mission').documentId('singleton-mission').views(getPreview('mission'))).icon(FiBatteryCharging),
-      S.divider(),
+      // S.listItem().title('Mission [LEGACY]').child(S.editor().id('mission').schemaType('mission').documentId('singleton-mission').views(getPreview('mission'))).icon(FiBatteryCharging),
+      // S.divider(),
       S.listItem().title('Mission').child(S.editor().id('missionNew').schemaType('missionNew').documentId('singleton-missionNew').views(getPreview('missionNew'))).icon(FiBatteryCharging),
       S.divider(),
       S.listItem()
@@ -80,8 +80,8 @@ export default () =>
           S.list()
             .title('Team')
             .items([
-              S.listItem().title('Team (Landing Page)[LEGACY]').child(S.editor().id('teamLanding').schemaType('teamLanding').documentId('singleton-teamLanding').views(getPreview('teamLanding'))).icon(FiSun),
-              S.divider(),
+              // S.listItem().title('Team (Landing Page)[LEGACY]').child(S.editor().id('teamLanding').schemaType('teamLanding').documentId('singleton-teamLanding').views(getPreview('teamLanding'))).icon(FiSun),
+              // S.divider(),
               S.listItem().title('Team (Landing Page)').child(S.editor().id('teamLandingNew').schemaType('teamLandingNew').documentId('singleton-teamLandingNew').views(getPreview('teamLandingNew'))).icon(FiSun),
               S.divider(),
               orderableDocumentListDeskItem({
@@ -96,17 +96,18 @@ export default () =>
               ,
             ])),
       S.divider(),
-      S.listItem()
-        .title('Careers')
-        .child(
-          S.list()
-            .title('Careers')
-            .items([
-              S.listItem().title('Careers (Landing Page)').child(S.editor().id('careersLanding').schemaType('careersLanding').documentId('singleton-careersLanding').views(getPreview('careersLanding'))).icon(FiSun),
-              ,
-              S.divider(),
-              S.listItem().title('Careers Listings (LEGACY)').child(S.documentTypeList('careers').title('Careers Listings (LEGACY)')).icon(FiFileText),
-            ])),
+      S.listItem().title('Careers').child(S.editor().id('careersLanding').schemaType('careersLanding').documentId('singleton-careersLanding').views(getPreview('careersLanding'))).icon(FiSun),
+      // S.listItem()
+      //   .title('Careers')
+      //   .child(
+      //     S.list()
+      //       .title('Careers')
+      //       .items([
+      //         S.listItem().title('Careers (Landing Page)').child(S.editor().id('careersLanding').schemaType('careersLanding').documentId('singleton-careersLanding').views(getPreview('careersLanding'))).icon(FiSun),
+      //         ,
+      //         S.divider(),
+      //         S.listItem().title('Careers Listings (LEGACY)').child(S.documentTypeList('careers').title('Careers Listings (LEGACY)')).icon(FiFileText),
+      //       ])),
       S.divider(),
       S.listItem()
         .title('Views')
