@@ -25,7 +25,7 @@ export const createUrl = ({ slug, globalSlug }) => {
   }
   let path = `${globalSlug}`
   if (slug) path += `/${slug.current}`
-  return `${previewURL}/api/preview?secret=skX61xvSWguyfpzqBt2mudIqp7Jb6bdEJ9vmJ2dk5Qjd3ONqkidgBNZaPFyxn62LmaEMgkxQOUAZwPf1bgUFdCoJrWCKyMkkCx7PuHobefnf93FE6h3AonmjPlM1m54Horpv2oMRbOqSsG6ILmEMOFdJVsSf6IRNruolEU0CiktWaoVWx8nL&slug=${path}`
+  return `${previewURL}/api/preview?secret=skpoTwTkcjfqk3c8qour5vVlgQblUWJ5SdaOoYSd6jxNgv32C6wC25LYMZLBo0w21tyY9AjAKI1hallJ2TWQsLIcA8XtnX9EQgRh8bwBu2hsZPUAvQQWsyIfO1bc8WojWZDgrO7KYOMvyz6u3zxRYJzEYBtLOO7ZaPbKy0g5dgefvqxmLgp7&slug=${path}`
 }
 
 export default function resolveProductionUrl (document) {
