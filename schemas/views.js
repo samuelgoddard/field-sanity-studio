@@ -35,7 +35,8 @@ export default {
       type: 'array',
       of: [
         {type: 'textBlock', title: 'Text'},
-        {type: 'modularImageBlock', title: 'Image'},
+        {type: 'modularImageBlock', title: 'Full Width Image'},
+        {type: 'modularContentImageBlock', title: 'Content Image'},
         {type: 'modularQuoteBlock', title: 'Quote'},
       ],
     },

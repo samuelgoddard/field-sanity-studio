@@ -25,6 +25,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Icon',
+      name: 'icon',
+      type: 'defaultImage', 
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Country',
       name: 'country',
       type: 'reference',

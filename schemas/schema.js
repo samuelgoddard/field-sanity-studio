@@ -28,6 +28,7 @@ import views from './views'
 import seo from './common/seo'
 import defaultImage from './common/defaultImage'
 import modularImageBlock from './common/modularImageBlock'
+import modularContentImageBlock from './common/modularContentImageBlock'
 import modularQuoteBlock from './common/modularQuoteBlock'
 import modularTextBlock from './common/modularTextBlock'
 
@@ -62,6 +63,7 @@ export default createSchema({
     seo,
     defaultImage,
     modularImageBlock,
+    modularContentImageBlock,
     modularQuoteBlock,
     modularTextBlock,
     bar,

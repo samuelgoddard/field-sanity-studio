@@ -30,11 +30,24 @@ export default {
       type: "string",
       validation: Rule => Rule.required()
     },
+    // {
+    //   title: 'Department',
+    //   name: 'department',
+    //   type: 'reference',
+    //   to: [{type: 'departments'}]
+    // },
     {
       title: 'Department',
-      name: 'department',
-      type: 'reference',
-      to: [{type: 'departments'}]
+      name: 'departmentMulti',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            {type: 'departments'},
+          ]
+        }
+      ],
     },
     {
       title: 'Location',
