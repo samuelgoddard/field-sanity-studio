@@ -16,6 +16,7 @@
     "@sanity/dashboard",
     "media",
     "vercel-deploy",
+    "@sanity/production-preview",
     "@sanity/color-input",
     "@sanity/orderable-document-list"
   ],
