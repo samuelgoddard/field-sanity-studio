@@ -22,6 +22,35 @@ export default {
       type: 'string',
       validation: Rule => Rule.required()
     },
+    {
+      title: 'Social Links',
+      name: 'socialLinks',
+      type: 'array',
+      of: [
+        {
+          title: 'Item',
+          name: 'item',
+          type: 'object',
+          fields: [
+            {name: 'title', type: 'string', title: 'Title', validation: Rule => Rule.required()},
+            {name: 'url', type: 'url', title: 'Url', validation: Rule => Rule.required()},
+          ],
+          preview: {
+            select: {
+              title: 'title',
+              url: 'url',
+            },
+            prepare(selection) {
+              const {title, url} = selection
+              return {
+                title: title,
+                subtitle: `${url}`
+              }
+            }
+          }
+        }
+      ]
+    },
   ],
   preview: {
     select: {
