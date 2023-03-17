@@ -65,6 +65,7 @@ export default {
           type: 'object',
           fields: [
             {name: 'heading', type: 'string', title: 'Heading', validation: Rule => Rule.required()},
+            {name: 'icon', type: 'defaultImage', title: 'Icon', validation: Rule => Rule.required()},
             {name: 'text', type: 'text', rows: 3, title: 'Text', validation: Rule => Rule.required()},
           ],
           preview: {
