@@ -35,6 +35,19 @@ export default {
       to: [{type: 'team'}]
     },
     {
+      title: 'Authors',
+      name: 'authors',
+      type: 'array',
+      of: [
+        {
+          title: 'Author',
+          name: 'author',
+          type: 'reference',
+          to: [{type: 'team'}]
+        },
+      ]
+    },
+    {
       title: 'Content Blocks',
       name: 'contentBlocks',
       description: 'The modular content blocks for this article',
@@ -44,6 +57,8 @@ export default {
         {type: 'modularImageBlock', title: 'Full Width Image'},
         {type: 'modularContentImageBlock', title: 'Content Image'},
         {type: 'modularQuoteBlock', title: 'Quote'},
+        {type: 'modularEmbedBlock', title: 'Embed (External Video etc.)'},
+        {type: 'modularSanityVideoBlock', title: 'Video (Internal Sanity Video)'},
       ],
     },
     {

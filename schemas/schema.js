@@ -31,6 +31,8 @@ import modularImageBlock from './common/modularImageBlock'
 import modularContentImageBlock from './common/modularContentImageBlock'
 import modularQuoteBlock from './common/modularQuoteBlock'
 import modularTextBlock from './common/modularTextBlock'
+import modularSanityVideoBlock from './common/modularSanityVideoBlock'
+import modularEmbedBlock from './common/modularEmbedBlock'
 
 import pictorgram from './blocks/pictorgram'
 import bar from './blocks/bar'
@@ -66,6 +68,8 @@ export default createSchema({
     modularContentImageBlock,
     modularQuoteBlock,
     modularTextBlock,
+    modularSanityVideoBlock,
+    modularEmbedBlock,
     bar,
     pictorgram
   ]),
