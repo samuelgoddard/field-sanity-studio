@@ -28,11 +28,24 @@ export default {
       type: 'reference',
       to: [{type: 'categories'}]
     },
+    // {
+    //   title: 'Author',
+    //   name: 'author',
+    //   type: 'reference',
+    //   to: [{type: 'team'}]
+    // },
     {
-      title: 'Author',
-      name: 'author',
-      type: 'reference',
-      to: [{type: 'team'}]
+      title: 'Authors',
+      name: 'authors',
+      type: 'array',
+      of: [
+        {
+          title: 'Author',
+          name: 'author',
+          type: 'reference',
+          to: [{type: 'team'}]
+        },
+      ]
     },
     {
       title: 'Authors',
