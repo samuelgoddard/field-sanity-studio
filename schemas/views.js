@@ -48,19 +48,6 @@ export default {
       ]
     },
     {
-      title: 'Authors',
-      name: 'authors',
-      type: 'array',
-      of: [
-        {
-          title: 'Author',
-          name: 'author',
-          type: 'reference',
-          to: [{type: 'team'}]
-        },
-      ]
-    },
-    {
       title: 'Content Blocks',
       name: 'contentBlocks',
       description: 'The modular content blocks for this article',
